@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planejador de Viagem</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Planejador de Viagem</h1>
+    
+            <p>Organize sua viagem dos sonhos!</p>
+
+        </header>
+
+        <section class="form-section">
+            <h2>Detalhes da Viagem</h2>
+            <form id="form-planejador" action="#" method="POST">
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino"><br><br>
+
+                <label for="data-ida">Data de Ida</label>
+                <input type="date" id="data-ida" name="data-ida"><br><br>
+
+                <label for="data-volta">Data de Volta:</label>
+                <input type="date" id="data-volta" name="data-volta"><br><br>
+
+                <label for="hospedagem">Tipo de Hospedagem:</label>
+                <select id="hospedagem" name="hospedagem">
+                    <option value="hotel">Hotel</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="casa">Casa</option>
+                </select><br><br>
+
+                <button type="submit">Planejar Viagem</button> 
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Itinerário de Viagem</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela"> 
+                    <tr>
+                        <td>1</td>
+                        <td>Manhã</td>
+                        <td>Chegada e check-in no hotel</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tarde</td>
+                        <td>Tour pela cidade</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Manhã</td>
+                        <td>Visita ao museu local</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tarde</td>
+                        <td>Passeio na praia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Planejador de Viagem - Todos os direitos reservados</p>
+        </footer>
+        
+        <script src="script.js"></script>
+        
+
+
+    </body>
+
+    
+</html>
